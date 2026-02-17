@@ -22,6 +22,13 @@ Run the setup script to install all dependencies, build, and launch the game aut
 
 ---
 
+## 🔨 Build
+
+```bash
+cmake -S . -B build -G Ninja -DCMAKE_PREFIX_PATH="C:/msys64/ucrt64"
+cmake --build build
+```
+
 ## 🎮 Run
 
 ```bash
