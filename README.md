@@ -5,78 +5,25 @@
 > [!NOTE]
 > Parts of this project were *vibe coded* using **GPT 5.3 Codex** and **Claude Code Opus 4.6**.
 
----
-
 ## ⚡ Quick Setup
 
-Run the setup script to install all dependencies, build, and launch the game automatically:
+**🪟 Windows:** `.\setup.ps1` &nbsp; | &nbsp; **🐧 Linux:** `./setup.sh`
 
-**🪟 Windows (PowerShell):**
-```powershell
-.\setup.ps1
-```
+Both scripts install dependencies, build, and launch the game. Run with `--help` / `-?` for options.
 
-| Flag | Description |
-|------|-------------|
-| `-SkipDeps` | ⏭️ Skip dependency installation |
-| `-Clean` | 🧹 Clean rebuild from scratch |
-| `-NoBuild` | 🚀 Skip build, just run the game |
-| `-NoRun` | 🔨 Build only, don't launch |
-| `-GameFile "path"` | 📂 Custom game data file |
-
-**🐧 Linux (Debian/Ubuntu):**
-```bash
-chmod +x setup.sh
-./setup.sh
-```
-
-| Flag | Description |
-|------|-------------|
-| `--skip-deps` | ⏭️ Skip dependency installation |
-| `--clean` | 🧹 Clean rebuild from scratch |
-| `--no-build` | 🚀 Skip build, just run the game |
-| `--no-run` | 🔨 Build only, don't launch |
-| `--game <path>` | 📂 Custom game data file |
-
----
-
-## 🔨 Build
+## 🔨 Build & Run
 
 ```bash
 cmake -S . -B build -G Ninja
 cmake --build build
+./build/butterscotch_sdl <path-to-game-data>
 ```
 
 > 🪟 **Windows:** add `-DCMAKE_PREFIX_PATH="C:/msys64/ucrt64"` to the configure step if using MSYS2 for SDL2.
 
-## 🎮 Run
-
-```bash
-./build/butterscotch_sdl <path-to-game-data>
-```
-
----
-
-## 📁 Project Structure
-
-```
-Butterscotch-C/
-├── include/         # Public headers
-├── src/             # Source code
-│   ├── builtin/     # GML builtin functions
-│   ├── data/        # Game data parsing (FORM/IFF)
-│   ├── platform/    # SDL frontend
-│   └── runtime/     # VM execution engine
-├── setup.ps1        # Windows setup & build script
-├── setup.sh         # Linux setup & build script
-└── CMakeLists.txt
-```
-
----
-
 ## 💡 Credits
 
-This project is inspired by [Butterscotch](https://github.com/MrPowerGamerBR/Butterscotch) by [@MrPowerGamerBR](https://github.com/MrPowerGamerBR), a Kotlin implementation of the same VM. Butterscotch-C is a rewrite from scratch in C.
+Inspired by [Butterscotch](https://github.com/MrPowerGamerBR/Butterscotch) by [@MrPowerGamerBR](https://github.com/MrPowerGamerBR) (Kotlin). This is a rewrite from scratch in C.
 
 ---
 
