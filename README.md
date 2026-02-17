@@ -34,10 +34,8 @@ cmake --build build
 ## 🎮 Run
 
 ```bash
-./build/butterscotch_sdl undertale/game.unx
+./build/butterscotch_sdl <path-to-game-data>
 ```
-
-Place your `game.unx` inside `undertale/` and the music OGG files inside `undertale/music/`.
 
 ---
 
@@ -51,9 +49,6 @@ Butterscotch-C/
 │   ├── data/        # Game data parsing (FORM/IFF)
 │   ├── platform/    # SDL frontend
 │   └── runtime/     # VM execution engine
-├── undertale/       # Game data (not tracked)
-│   ├── game.unx
-│   └── music/       # External OGG music files
 ├── setup.ps1        # Automated setup & build script
 └── CMakeLists.txt
 ```
