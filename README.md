@@ -71,6 +71,12 @@ Butterscotch-C/
 
 ---
 
+## 💡 Credits
+
+This project is inspired by [Butterscotch](https://github.com/MrPowerGamerBR/Butterscotch) by [@MrPowerGamerBR](https://github.com/MrPowerGamerBR), a Kotlin implementation of the same VM. Butterscotch-C is a rewrite from scratch in C.
+
+---
+
 <p align="center">
   <i>* Despite everything, it's still just C.</i>
 </p>
