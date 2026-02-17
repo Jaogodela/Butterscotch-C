@@ -4,10 +4,11 @@
 
 ---
 
-## ⚡ Quick Setup (Windows)
+## ⚡ Quick Setup
 
 Run the setup script to install all dependencies, build, and launch the game automatically:
 
+**🪟 Windows (PowerShell):**
 ```powershell
 .\setup.ps1
 ```
@@ -19,6 +20,20 @@ Run the setup script to install all dependencies, build, and launch the game aut
 | `-NoBuild` | 🚀 Skip build, just run the game |
 | `-NoRun` | 🔨 Build only, don't launch |
 | `-GameFile "path"` | 📂 Custom game data file |
+
+**🐧 Linux (Debian/Ubuntu):**
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+| Flag | Description |
+|------|-------------|
+| `--skip-deps` | ⏭️ Skip dependency installation |
+| `--clean` | 🧹 Clean rebuild from scratch |
+| `--no-build` | 🚀 Skip build, just run the game |
+| `--no-run` | 🔨 Build only, don't launch |
+| `--game <path>` | 📂 Custom game data file |
 
 ---
 
@@ -49,7 +64,8 @@ Butterscotch-C/
 │   ├── data/        # Game data parsing (FORM/IFF)
 │   ├── platform/    # SDL frontend
 │   └── runtime/     # VM execution engine
-├── setup.ps1        # Automated setup & build script
+├── setup.ps1        # Windows setup & build script
+├── setup.sh         # Linux setup & build script
 └── CMakeLists.txt
 ```
 
