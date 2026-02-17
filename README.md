@@ -25,9 +25,11 @@ Run the setup script to install all dependencies, build, and launch the game aut
 ## 🔨 Build
 
 ```bash
-cmake -S . -B build -G Ninja -DCMAKE_PREFIX_PATH="C:/msys64/ucrt64"
+cmake -S . -B build -G Ninja
 cmake --build build
 ```
+
+> 🪟 **Windows:** add `-DCMAKE_PREFIX_PATH="C:/msys64/ucrt64"` to the configure step if using MSYS2 for SDL2.
 
 ## 🎮 Run
 
