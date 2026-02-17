@@ -1,6 +1,9 @@
-# 🧈 Butterscotch-C
+# Butterscotch-C
 
 > A C reimplementation of the GameMaker Studio 2 Gen8 VM — built to run **Undertale**.
+
+> [!NOTE]
+> Parts of this project were *vibe coded* using **GPT 5.3 Codex** and **Claude Code 4.6**.
 
 ---
 
