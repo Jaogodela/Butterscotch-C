@@ -1,0 +1,19 @@
+# Build
+build/
+
+# Game data (not part of the project)
+undertale/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CMake user presets
+CMakeUserPresets.json
