@@ -43,10 +43,3 @@ Then configure CMake with `CMAKE_PREFIX_PATH` pointing to that prefix (for examp
 
 When running on Windows, ensure `C:\msys64\ucrt64\bin` is on `PATH` so `SDL2.dll` and `SDL2_image.dll` can be found.
 
-For automated smoke tests of the SDL frontend, you can set:
-
-```bash
-BS_MAX_FRAMES=120
-```
-
-This makes `butterscotch_sdl` exit after the given number of frames.
